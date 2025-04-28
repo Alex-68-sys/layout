@@ -1,0 +1,157 @@
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+            color: #111;
+        }
+        /* Header grande iniziale */
+        .header-large {
+            background: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            font-family:UnifrakturCook,cursive;
+        }
+
+        .header-large img {
+            height: 90px;
+            max-width: 100%;
+        }
+
+        .header-large h1 {
+            font-size: 2.7rem;
+            margin-top: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        /* Header piccolo sticky centrato */
+        .header-small {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background: #f9f9f9;
+            padding: 15px 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            font-family:UnifrakturCook,cursive;
+            z-index: 999;
+            transform: translateY(-100%);
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            pointer-events: none;
+        }
+        .header-small.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .logo {
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            align-items: center;
+        }
+
+        .top-nav a {
+            color: white;
+            margin-left: 1rem;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .main-nav {
+            background: #f2f2f2;
+            padding: 0.75rem 1rem;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .main-nav a {
+            margin-right: 1.5rem;
+            color: #111;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            font-family: 'Merriweather', serif;
+            margin-bottom: 1.5rem;
+        }
+
+        @keyframes slideDown {
+            to {
+                transform: translateY(0);
+            }
+        }
+
+
+        .footer {
+            background: #111;
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: white;
+            margin-left: 1rem;
+            text-decoration: none;
+        }
+        .riga-verticale {
+            width: 1px;
+            height: 40px; /* stessa altezza dei titoli */
+            background-color: black;
+            margin: 0 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-large h1 {
+                font-size: 1.8rem;
+            }
+
+            .header-small {
+                padding: 10px 15px;
+            }
+
+            .header-small nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .header-small nav a {
+                font-size: 0.9rem;
+            }
+
+            .header-small img {
+                height: 30px;
+            }
+        }
+
+    </style>
