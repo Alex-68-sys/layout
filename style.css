@@ -1,16 +1,21 @@
-    <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
+        .article.hero {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .article.hero .text {
+            flex: 1;
+        }
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #fff;
             color: #111;
         }
-        /* Header grande iniziale */
         .header-large {
             background: white;
             padding: 50px 20px;
@@ -30,7 +35,6 @@
             font-weight: 700;
             letter-spacing: 1px;
         }
-        /* Header piccolo sticky centrato */
         .header-small {
             width: 100%;
             position: fixed;
@@ -124,13 +128,25 @@
         }
         .riga-verticale {
             width: 1px;
-            height: 40px; /* stessa altezza dei titoli */
+            height: 40px;
             background-color: black;
             margin: 0 10px;
         }
+        .article.hero .image {
+            flex: 1;
+        }
+
+    .article.hero img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 
         /* Responsive */
         @media (max-width: 768px) {
+            .article.hero {
+                flex-direction: column;
+            }
             .header-large h1 {
                 font-size: 1.8rem;
             }
@@ -153,5 +169,3 @@
                 height: 30px;
             }
         }
-
-    </style>
