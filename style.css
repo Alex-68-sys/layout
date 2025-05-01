@@ -8,6 +8,15 @@
             align-items: center;
             gap: 30px;
         }
+        .article.hero2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .article.hero2 .text {
+            flex: 1;
+            font-size: 12px;
+        }
         .article.hero .text {
             flex: 1;
         }
@@ -39,14 +48,16 @@
             width: 100%;
             position: fixed;
             top: 0;
-            background: #f9f9f9;
-            padding: 15px 90px;
-            display: flex;
+            /*background: #f9f9f9;*/
+            background: white;
+            padding: /*15px 90px;*/ 10px;
+            /*display: flex; */
+            display: none;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             border-bottom: 1px solid #ddd;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            box-shadow: /*0 2px 5px rgba(0, 0, 0, 0.05);*/ 0 2px 5px rgba(0,0,0,0.1);
             font-family:UnifrakturCook,cursive;
             z-index: 999;
             transform: translateY(-100%);
@@ -58,8 +69,20 @@
             opacity: 1;
             transform: translateY(0);
             pointer-events: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
         }
 
+        .top-nav {
+            font-family: "Century Gothic",sans-serif;
+            background: white;
+            margin-top: 10px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+
+        }
         .logo {
             font-family: 'UnifrakturCook', cursive;
             font-size: 2rem;
@@ -69,7 +92,7 @@
         }
 
         .top-nav a {
-            color: white;
+            color: black;
             margin-left: 1rem;
             text-decoration: none;
             font-size: 0.9rem;
@@ -112,8 +135,8 @@
 
 
         .footer {
-            background: #111;
-            color: white;
+            background: white;
+            color: black;
             padding: 1.5rem;
             display: flex;
             flex-wrap: wrap;
@@ -122,7 +145,7 @@
         }
 
         .footer a {
-            color: white;
+            color: black;
             margin-left: 1rem;
             text-decoration: none;
         }
