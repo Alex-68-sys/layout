@@ -79,8 +79,8 @@
             font-family: "Century Gothic",sans-serif;
             background: white;
             margin-top: 10px;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
+            border-top: none; /*1px solid #ddd;*/
+            border-bottom: none; /*1px solid #ddd;*/
 
         }
         .logo {
@@ -97,7 +97,19 @@
             text-decoration: none;
             font-size: 0.9rem;
         }
-
+        .top-link {
+            font-family: "Century Gothic", sans-serif;
+            position: absolute;
+            top: 210px;
+            right: 90px;
+            text-decoration: none;
+        }
+        .top-button {
+            font-family: "Century Gothic",sans-serif;
+            position: absolute;
+            top: 210px;
+            right: 10px;
+        }
         .main-nav {
             background: #f2f2f2;
             padding: 0.75rem 1rem;
@@ -170,6 +182,7 @@
             .article.hero {
                 flex-direction: column;
             }
+
             .header-large h1 {
                 font-size: 1.8rem;
             }
