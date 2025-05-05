@@ -20,6 +20,9 @@
         .article.hero .text {
             flex: 1;
         }
+        .sign-in-btn {
+            margin-left: auto;
+        }
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #fff;
