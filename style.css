@@ -185,7 +185,12 @@
             .article.hero {
                 flex-direction: column;
             }
-
+            .top-button {
+                top: 120px;
+            }
+            .top-link{
+                 top: 120px;
+            }
             .header-large h1 {
                 font-size: 1.8rem;
             }
